@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-let pokemonURLCompnent = "https://pokeapi.co/docs/v2.html/#pokemon/api/v2/pokemon/"
+let pokemonURLCompnent = "https://pokeapi.co/api/v2/pokemon/"
     
     @IBAction func submitButtonTapped(_ sender: Any) {
         pokemanTextField.resignFirstResponder()
@@ -38,16 +38,18 @@ let pokemonURLCompnent = "https://pokeapi.co/docs/v2.html/#pokemon/api/v2/pokemo
         
         
         //Building complete URL
-        let requestURL = pokemonURLCompnent + "{" + pokemanNameURLComponent + "}" + "/"
+        let requestURL = pokemonURLCompnent  + pokemanNameURLComponent
         
         Alamofire.request(requestURL).responseJSON { (response) in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                self.pokemanInformationTextView.text = json["pokemon"].stringValue
+                self.pokemanInformationTextView.text = json["name"].stringValue
             case .failure(let error):
                 self.pokemanInformationTextView.text = "Invalid selection entered or an error occured. Please Try Again 😁"
                 print(error.localizedDescription)
+                
+                print(JSON.self)
             }
             
         }
