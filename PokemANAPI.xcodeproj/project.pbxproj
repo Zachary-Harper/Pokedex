@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F6F3E96B1233BA52000DE1C /* Pods_PokemANAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF81C500D3408813941A7DAE /* Pods_PokemANAPI.framework */; };
 		8333A7EE2199DF990036A469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8333A7ED2199DF990036A469 /* AppDelegate.swift */; };
 		8333A7F02199DF990036A469 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8333A7EF2199DF990036A469 /* ViewController.swift */; };
 		8333A7F32199DF990036A469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8333A7F12199DF990036A469 /* Main.storyboard */; };
 		8333A7F52199DF9A0036A469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8333A7F42199DF9A0036A469 /* Assets.xcassets */; };
 		8333A7F82199DF9A0036A469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8333A7F62199DF9A0036A469 /* LaunchScreen.storyboard */; };
+		9CF1B29D6F2CF4BF93F94E8B /* Pods_PokemANAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB305545611E45D07E35159 /* Pods_PokemANAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03E43E833EDC0904BCF362B4 /* Pods-PokemANAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemANAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokemANAPI/Pods-PokemANAPI.debug.xcconfig"; sourceTree = "<group>"; };
-		64A4FD9A99E80ECDF75738A9 /* Pods-PokemANAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemANAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokemANAPI/Pods-PokemANAPI.release.xcconfig"; sourceTree = "<group>"; };
+		16C5240AD5CFA6B3504BD054 /* Pods-PokemANAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemANAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokemANAPI/Pods-PokemANAPI.release.xcconfig"; sourceTree = "<group>"; };
+		34C3767AA8C72C055CD2F7F1 /* Pods-PokemANAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemANAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokemANAPI/Pods-PokemANAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		8333A7EA2199DF990036A469 /* PokemANAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemANAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8333A7ED2199DF990036A469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8333A7EF2199DF990036A469 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +25,7 @@
 		8333A7F42199DF9A0036A469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8333A7F72199DF9A0036A469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8333A7F92199DF9A0036A469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF81C500D3408813941A7DAE /* Pods_PokemANAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemANAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB305545611E45D07E35159 /* Pods_PokemANAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemANAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F6F3E96B1233BA52000DE1C /* Pods_PokemANAPI.framework in Frameworks */,
+				9CF1B29D6F2CF4BF93F94E8B /* Pods_PokemANAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +45,8 @@
 			children = (
 				8333A7EC2199DF990036A469 /* PokemANAPI */,
 				8333A7EB2199DF990036A469 /* Products */,
-				BB3C27D635E5F6F1AF19773B /* Pods */,
-				D5629598FB001434D9B586FB /* Frameworks */,
+				CF58D0DAC0308B99202E8AE9 /* Pods */,
+				8617EA1062DDF502B3FB73F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,21 +71,21 @@
 			path = PokemANAPI;
 			sourceTree = "<group>";
 		};
-		BB3C27D635E5F6F1AF19773B /* Pods */ = {
+		8617EA1062DDF502B3FB73F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				03E43E833EDC0904BCF362B4 /* Pods-PokemANAPI.debug.xcconfig */,
-				64A4FD9A99E80ECDF75738A9 /* Pods-PokemANAPI.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D5629598FB001434D9B586FB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FF81C500D3408813941A7DAE /* Pods_PokemANAPI.framework */,
+				ADB305545611E45D07E35159 /* Pods_PokemANAPI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF58D0DAC0308B99202E8AE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34C3767AA8C72C055CD2F7F1 /* Pods-PokemANAPI.debug.xcconfig */,
+				16C5240AD5CFA6B3504BD054 /* Pods-PokemANAPI.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,10 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8333A7FC2199DF9A0036A469 /* Build configuration list for PBXNativeTarget "PokemANAPI" */;
 			buildPhases = (
-				4338DA6EBCA8B23A6E5CD9F6 /* [CP] Check Pods Manifest.lock */,
+				54A499543D16B7E245FB9FA3 /* [CP] Check Pods Manifest.lock */,
 				8333A7E62199DF990036A469 /* Sources */,
 				8333A7E72199DF990036A469 /* Frameworks */,
 				8333A7E82199DF990036A469 /* Resources */,
+				8496B835DFD9CCF361E1F48D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,7 +157,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4338DA6EBCA8B23A6E5CD9F6 /* [CP] Check Pods Manifest.lock */ = {
+		54A499543D16B7E245FB9FA3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -172,6 +173,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8496B835DFD9CCF361E1F48D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PokemANAPI/Pods-PokemANAPI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemANAPI/Pods-PokemANAPI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -326,7 +347,7 @@
 		};
 		8333A7FD2199DF9A0036A469 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03E43E833EDC0904BCF362B4 /* Pods-PokemANAPI.debug.xcconfig */;
+			baseConfigurationReference = 34C3767AA8C72C055CD2F7F1 /* Pods-PokemANAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,7 +365,7 @@
 		};
 		8333A7FE2199DF9A0036A469 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64A4FD9A99E80ECDF75738A9 /* Pods-PokemANAPI.release.xcconfig */;
+			baseConfigurationReference = 16C5240AD5CFA6B3504BD054 /* Pods-PokemANAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

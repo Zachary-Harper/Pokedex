@@ -7,14 +7,52 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var pokemanTextField: UITextField!
+    @IBOutlet weak var pokemanInformationTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+let pokemonURLCompnent = "https://pokeapi.co/docs/v2.html/#pokemon/api/v2/pokemon/"
+    
+    @IBAction func submitButtonTapped(_ sender: Any) {
+        pokemanTextField.resignFirstResponder()
+        
+        
+        //Checking to make sure both fields have values
+        
+        guard let pokemanName = pokemanTextField.text else {
+            return
+        }
+        //clearing out text field
+        pokemanTextField.text = ""
+     
+        
+        //replacing spaces with +'s so that it will be an  URL
+        let pokemanNameURLComponent = pokemanName.replacingOccurrences(of: " ", with: "+")
+        
+        
+        //Building complete URL
+        let requestURL = pokemonURLCompnent + "{" + pokemanNameURLComponent + "}" + "/"
+        
+        Alamofire.request(requestURL).responseJSON { (response) in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                self.pokemanInformationTextView.text = json["pokemon"].stringValue
+            case .failure(let error):
+                self.pokemanInformationTextView.text = "Invalid selection entered or an error occured. Please Try Again 😁"
+                print(error.localizedDescription)
+            }
+            
+        }
+        
+    }
+    
 }
 

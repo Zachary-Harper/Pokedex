@@ -6,6 +6,6 @@ target 'PokemANAPI' do
   use_frameworks!
 
   # Pods for PokemANAPI
-  'Alamofire'
-  'SwiftyJSON'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 end
