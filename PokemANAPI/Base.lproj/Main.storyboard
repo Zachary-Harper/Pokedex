@@ -20,7 +20,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fB6-bE-FrT">
                                 <rect key="frame" x="0.0" y="264" width="375" height="101"/>
-                                <color key="backgroundColor" red="0.5514130679" green="0.60253410529999996" blue="0.56848364829999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -89,6 +89,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="mainScreenView" destination="8bC-Xf-vdC" id="JyJ-70-VRv"/>
                         <outlet property="pokemanImageView" destination="rm8-3A-Llj" id="yfb-M6-8J5"/>
                         <outlet property="pokemanInformationTextView" destination="fB6-bE-FrT" id="RhS-KW-Ifi"/>
                         <outlet property="pokemanTextField" destination="Aty-8H-2Qc" id="QWV-sA-kuH"/>
