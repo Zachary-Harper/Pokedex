@@ -24,7 +24,7 @@ let pokemonURLCompnent = "https://pokeapi.co/api/v2/pokemon/"
         pokemanTextField.resignFirstResponder()
         
         
-        //Checking to make sure both fields have values
+        //Checking to make sure the name has a value
         
         guard let pokemanName = pokemanTextField.text else {
             return
@@ -38,18 +38,23 @@ let pokemonURLCompnent = "https://pokeapi.co/api/v2/pokemon/"
         
         
         //Building complete URL
-        let requestURL = pokemonURLCompnent  + pokemanNameURLComponent
+        let requestURL = pokemonURLCompnent + pokemanNameURLComponent + "/"
         
         Alamofire.request(requestURL).responseJSON { (response) in
             switch response.result {
+                
             case .success(let value):
+                
                 let json = JSON(value)
+                
                 self.pokemanInformationTextView.text = json["name"].stringValue
+                
             case .failure(let error):
+                
                 self.pokemanInformationTextView.text = "Invalid selection entered or an error occured. Please Try Again 😁"
+                
                 print(error.localizedDescription)
                 
-                print(JSON.self)
             }
             
         }
