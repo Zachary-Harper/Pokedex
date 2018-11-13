@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 let pokemonURLCompnent = "https://pokeapi.co/api/v2/pokemon/"
-    func backgroundColor() {
+    func backgroundColor(color: String) {
     enum types {
         case normal
         case fire
@@ -57,6 +57,26 @@ let pokemonURLCompnent = "https://pokeapi.co/api/v2/pokemon/"
         self.mainScreenView.backgroundColor = UIColor(displayP3Red: 206, green: 191, blue: 101, alpha: 1)
     case .rock:
         self.mainScreenView.backgroundColor = UIColor(displayP3Red: 182, green: 161, blue: 54, alpha: 1)
+    case .bug:
+        self.mainScreenView.backgroundColor = UIColor(displayP3Red: 166, green: 185, blue: 26, alpha: 1)
+    case .ghost:
+        self.mainScreenView.backgroundColor = UIColor(displayP3Red: 115, green: 87, blue: 151, alpha: 1)
+    case .steel:
+        self.mainScreenView.backgroundColor = UIColor(displayP3Red: 183, green: 183, blue: 206, alpha: 1)
+    case .grass:
+        self.mainScreenView.backgroundColor = UIColor(displayP3Red: 122, green: 199, blue: 76, alpha: 1)
+    case .electric:
+        self.mainScreenView.backgroundColor = UIColor(displayP3Red: 247, green: 208, blue: 44, alpha: 1)
+    case .psychic:
+        self.mainScreenView.backgroundColor = UIColor(displayP3Red: 249, green: 85, blue: 135, alpha: 1)
+    case .ice:
+        self.mainScreenView.backgroundColor = UIColor(displayP3Red: 150, green: 217, blue: 214, alpha: 1)
+    case .dragon:
+        self.mainScreenView.backgroundColor = UIColor(displayP3Red: 111, green: 53, blue: 252, alpha: 1)
+    case .dark:
+        self.mainScreenView.backgroundColor = UIColor(displayP3Red: 112, green: 87, blue: 87, alpha: 1)
+    case .fairy:
+        self.mainScreenView.backgroundColor = UIColor(displayP3Red: 214, green: 113, blue: 173, alpha: 1)
     
  
     default:
@@ -115,8 +135,11 @@ let pokemonURLCompnent = "https://pokeapi.co/api/v2/pokemon/"
                 
                 self.pokemanImageView.sd_setImage(with: URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(json["id"].stringValue).png" ), placeholderImage: UIImage(named: "placeholder.png"))
                 
+                let background = json["types"][0]["name"].stringValue
                 
-            
+                self.mainScreenView.backgroundColor(color: ".\(background)")
+                
+                
                 
             case .failure(let error):
                 
