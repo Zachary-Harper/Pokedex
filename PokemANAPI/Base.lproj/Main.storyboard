@@ -18,10 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fB6-bE-FrT">
-                                <rect key="frame" x="0.0" y="264" width="375" height="403"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fB6-bE-FrT">
+                                <rect key="frame" x="0.0" y="264" width="375" height="101"/>
                                 <color key="backgroundColor" red="0.5514130679" green="0.60253410529999996" blue="0.56848364829999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LOq-G0-dPk">
@@ -66,20 +66,30 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rm8-3A-Llj">
+                                <rect key="frame" x="67" y="373" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="nOS-ap-03N"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.5514130679" green="0.60253410529999996" blue="0.56848364829999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="rm8-3A-Llj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="SGA-zE-ziv"/>
                             <constraint firstItem="fB6-bE-FrT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SMv-tQ-gSb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rm8-3A-Llj" secondAttribute="bottom" constant="54" id="SiB-Xc-lRy"/>
                             <constraint firstItem="fB6-bE-FrT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wv8-Tw-Ej7"/>
                             <constraint firstItem="fB6-bE-FrT" firstAttribute="top" secondItem="LOq-G0-dPk" secondAttribute="bottom" constant="45" id="lac-hE-M10"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LOq-G0-dPk" secondAttribute="trailing" id="m1o-o8-MbN"/>
+                            <constraint firstItem="rm8-3A-Llj" firstAttribute="top" secondItem="fB6-bE-FrT" secondAttribute="bottom" constant="8" id="n0q-Pj-xBD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rm8-3A-Llj" secondAttribute="trailing" constant="68" id="qbz-uQ-PdG"/>
                             <constraint firstItem="LOq-G0-dPk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="rC3-OC-MEo"/>
-                            <constraint firstItem="fB6-bE-FrT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="v4u-dm-lOB"/>
                             <constraint firstItem="LOq-G0-dPk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xLr-o4-EmD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="pokemanImageView" destination="rm8-3A-Llj" id="yfb-M6-8J5"/>
                         <outlet property="pokemanInformationTextView" destination="fB6-bE-FrT" id="RhS-KW-Ifi"/>
                         <outlet property="pokemanTextField" destination="Aty-8H-2Qc" id="QWV-sA-kuH"/>
                     </connections>

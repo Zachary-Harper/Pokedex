@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C4D7ABE6D888228086244A3F7191719"
+               BlueprintIdentifier = "28DF25129A7D6E0880A55226F9D78DE6"
                BuildableName = "Pods_PokemANAPI.framework"
                BlueprintName = "Pods-PokemANAPI"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2C4D7ABE6D888228086244A3F7191719"
+            BlueprintIdentifier = "28DF25129A7D6E0880A55226F9D78DE6"
             BuildableName = "Pods_PokemANAPI.framework"
             BlueprintName = "Pods-PokemANAPI"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -8,4 +8,5 @@ target 'PokemANAPI' do
   # Pods for PokemANAPI
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'SDWebImage'
 end
